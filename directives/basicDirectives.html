@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>First</title>
+    <script src= "../angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="" ng-init="firstName='Hemant'">
+
+        <p>The name is
+            <span ng-bind="firstName"></span>
+        </p>
+
+        <p>Input something in the input :</p>
+
+        <p>Name:
+            <input type="text" ng-model="name">
+        </p>
+
+        <p ng-bind="name"></p>
+
+
+    </div>
+</body>
+</html>

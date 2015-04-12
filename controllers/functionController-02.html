@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+
+    <script>
+        function ExampleCtrl($scope) {
+
+            $scope.value = "Lorem ipsum";
+
+        }
+    </script>
+
+</head>
+<body >
+
+    <div ng-controller="ExampleCtrl">
+
+        <input ng-model="value">
+        <br/>
+        {{value}}
+
+    </div>
+
+</body>
+</html>

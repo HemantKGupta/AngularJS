@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>First</title>
+    <script src= "../angular.js"></script>
+</head>
+
+    <body>
+
+    <div ng-app="myApp" ng-controller="personCtrl">
+
+        <h1>Shopping List</h1>
+
+        <ul>
+            <li ng-repeat="stuff in shoppingList">{{stuff.listItem}}</li>
+        </ul>
+
+        <form ng-submit="addItem()">
+
+            <input type="text" ng-model="itemToAdd"/>
+            <input type="submit" value="Add"/>
+
+        </form>
+
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('personCtrl', function($scope)
+        {
+            $scope.shoppingList = new Array();
+
+            $scope.addItem = function(){
+
+                $scope.shoppingList.push({
+
+                    listItem : $scope.itemToAdd,
+                    completed : false
+
+                });
+
+                $scope.itemToAdd="";
+
+            }
+        });
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>First</title>
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="" ng-init="firstName='Hemant'">
+
+        <p>My first expression: {{ 5 + 5 }}</p>
+
+        <p>The name is
+            <span ng-bind="firstName"></span>
+        </p>
+
+        <p>Input something in the input :</p>
+
+        <p>Name:
+            <input type="text" ng-model="name">
+        </p>
+
+        <p ng-bind="name"></p>
+
+
+    </div>
+</body>
+</html>

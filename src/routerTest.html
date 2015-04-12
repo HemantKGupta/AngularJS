@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
+    <script src="routeapp.js"></script>
+    <script src="routehello.js"></script>
+    <script src="routeabout.js"></script>
+    <script src="routeme.js"></script>
+</head>
+
+<body ng-app="routingApp">
+
+<header>
+    <a href="#/hello">Hello</a>
+    <a href="#/about">About</a>
+    <a href="#/me">Me</a>
+</header>
+
+<!-- Place where our view will be displayed -->
+<div ng-view>
+
+</div>
+
+</body>
+</html>
